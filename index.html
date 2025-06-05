@@ -15,7 +15,24 @@
     a:hover { text-decoration: underline; }
     .highlight { background-color: #f8f9fa; border-radius: 5px; margin: 0; }
     .tag { display: inline-block; background: #e0f7fa; padding: 3px 8px; border-radius: 3px; font-size: 0.9em; margin-right: 5px; margin-bottom: 5px; }
-    @media (max-width: 600px) { body { padding: 10px; } }
+    .two-columns { 
+      display: flex; 
+      justify-content: space-between; 
+      margin: 20px 0;
+    }
+    .two-columns section { 
+      width: 48%; 
+    }
+    @media (max-width: 600px) { 
+      body { padding: 10px; } 
+      .two-columns { 
+        flex-direction: column; 
+      }
+      .two-columns section { 
+        width: 100%; 
+        margin-bottom: 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -24,8 +41,6 @@
     <h1>Морсков Владислав</h1>
     <p><strong>Game Producer / Unity Developer</strong> | PC & Mobile Games | Управление бюджетом до 300 000 ₽</p>
   </section>
-
-
 
   <section class="highlight">
     <h2>Ключевые навыки</h2>
@@ -38,23 +53,23 @@
     </div>
   </section>
 
-    <section style="flex-direction: row;">
-  <section>
-    <h2>Образование</h2>
-    <ul>
-      <li><strong><a href="https://www.school-xyz.com">XYZ School</a></strong>: Продюсирование игр (2023).</li>
-      <li><strong><a href="https://www.susu.ru/ru">ЮУрГУ</a></strong>: Управление бизнесом и проектами (2023-2028, заочное).</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Контакты</h2>
-    <ul>
-      <li>Telegram: <a href="https://t.me/madsys_w">@madsys_w</a></li>
-      <li>Email: <a href="mailto:vlades60305@gmail.com">vlades60305@gmail.com</a></li>
-    </ul>
-  </section>
+  <div class="two-columns">
+    <section>
+      <h2>Образование</h2>
+      <ul>
+        <li><strong><a href="https://www.school-xyz.com">XYZ School</a></strong>: Продюсирование игр (2023).</li>
+        <li><strong><a href="https://www.susu.ru/ru">ЮУрГУ</a></strong>: Управление бизнесом и проектами (2023-2028, заочное).</li>
+      </ul>
     </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <ul>
+        <li>Telegram: <a href="https://t.me/madsys_w">@madsys_w</a></li>
+        <li>Email: <a href="mailto:vlades60305@gmail.com">vlades60305@gmail.com</a></li>
+      </ul>
+    </section>
+  </div>
 
   <section>
     <h2>Опыт работы</h2>
@@ -99,10 +114,6 @@
       <li>В одиночку выпустил <strong>8 проектов на Яндекс.Играх</strong>.</li>
     </ul>
   </section>
-
-  
-
-  
 
 </body>
 </html>
